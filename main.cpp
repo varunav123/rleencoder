@@ -22,7 +22,7 @@ int main()
 		}
 		else
 		{
-			fileout << s[i] << j;
+			fileout << s[i-1] << j;
 			j = 1;
 		}
 	}
