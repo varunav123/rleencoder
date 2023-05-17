@@ -14,15 +14,15 @@ int main()
 	int j = 1;
 	ofstream fileout;
 	fileout.open("fileout.txt");
-	for (int i=1;i<s.size();i++)
+	for (int i=0;i<s.size();i++)
 	{
-		if (s[i] == s[i - 1])
+		if (s[i] == s[i + 1])
 		{
 			j = j + 1;
 		}
 		else
 		{
-			fileout << s[i-1] << j;
+			fileout << s[i] << j;
 			j = 1;
 		}
 	}
